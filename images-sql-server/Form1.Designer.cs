@@ -35,6 +35,9 @@
             this.btnAbrir = new System.Windows.Forms.Button();
             this.lblTittle = new System.Windows.Forms.Label();
             this.openFileDialogBuscarImagen = new System.Windows.Forms.OpenFileDialog();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.dgvLista = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.SuspendLayout();
             // 
             // lblArchivo
@@ -78,6 +81,7 @@
             this.btnAbrir.TabIndex = 7;
             this.btnAbrir.Text = "Buscar";
             this.btnAbrir.UseVisualStyleBackColor = true;
+            this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
             // 
             // lblTittle
             // 
@@ -93,11 +97,33 @@
             // 
             this.openFileDialogBuscarImagen.FileName = "openFileDialog1";
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(537, 176);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(119, 32);
+            this.btnGuardar.TabIndex = 9;
+            this.btnGuardar.Text = "Agregar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // dgvLista
+            // 
+            this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLista.Location = new System.Drawing.Point(58, 232);
+            this.dgvLista.Name = "dgvLista";
+            this.dgvLista.RowHeadersWidth = 51;
+            this.dgvLista.RowTemplate.Height = 24;
+            this.dgvLista.Size = new System.Drawing.Size(685, 390);
+            this.dgvLista.TabIndex = 10;
+            // 
             // frmUploadImages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 521);
+            this.ClientSize = new System.Drawing.Size(796, 664);
+            this.Controls.Add(this.dgvLista);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.lblTittle);
             this.Controls.Add(this.btnAbrir);
             this.Controls.Add(this.txtArchivo);
@@ -106,6 +132,7 @@
             this.Controls.Add(this.txtNombre);
             this.Name = "frmUploadImages";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,6 +147,8 @@
         private System.Windows.Forms.Button btnAbrir;
         private System.Windows.Forms.Label lblTittle;
         private System.Windows.Forms.OpenFileDialog openFileDialogBuscarImagen;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.DataGridView dgvLista;
     }
 }
 

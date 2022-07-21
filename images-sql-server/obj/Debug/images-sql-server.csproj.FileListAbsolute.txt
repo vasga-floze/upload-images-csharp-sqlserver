@@ -1,0 +1,16 @@
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\bin\Debug\images-sql-server.exe.config
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\bin\Debug\images-sql-server.exe
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\bin\Debug\images-sql-server.pdb
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\bin\Debug\EntityFramework.dll
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\bin\Debug\EntityFramework.xml
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\obj\Debug\images-sql-server.csproj.AssemblyReference.cache
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\obj\Debug\images-sql-server.csproj.SuggestedBindingRedirects.cache
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\obj\Debug\images_sql_server.frmUploadImages.resources
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\obj\Debug\images_sql_server.Properties.Resources.resources
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\obj\Debug\images-sql-server.csproj.GenerateResource.cache
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\obj\Debug\images-sql-server.csproj.CoreCompileInputs.cache
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\obj\Debug\images-sql-server.csproj.CopyComplete
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\obj\Debug\images-sql-server.exe
+C:\Users\gabri\source\repos\images-sql-server\images-sql-server\obj\Debug\images-sql-server.pdb

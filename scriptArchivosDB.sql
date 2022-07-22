@@ -1,0 +1,13 @@
+
+CREATE DATABASE archivosDB;
+
+USE archivosDB;
+
+CREATE TABLE imagenes(
+	id INT IDENTITY(1,1) PRIMARY KEY NOT NULL, 
+	nombre VARCHAR(50),
+	img IMAGE
+);
+
+--CONSULTAR LOS REGISTROS EN LA TABLA
+--SELECT * FROM imagenes;

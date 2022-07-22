@@ -25,6 +25,6 @@ namespace images_sql_server.Model
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<imagene> imagenes { get; set; }
+        public virtual DbSet<imagenes> imagenes1 { get; set; }
     }
 }

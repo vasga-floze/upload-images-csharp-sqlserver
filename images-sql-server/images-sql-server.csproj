@@ -76,7 +76,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Model\imagene.cs">
+    <Compile Include="Model\imagenes.cs">
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />

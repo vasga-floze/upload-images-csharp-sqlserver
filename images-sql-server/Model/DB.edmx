@@ -4,33 +4,32 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="archivosDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="archivosDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="imagenes">
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="50" />
           <Property Name="img" Type="image" />
-          <Property Name="nombre" Type="varchar" MaxLength="100" />
         </EntityType>
         <EntityContainer Name="archivosDBModelStoreContainer">
           <EntitySet Name="imagenes" EntityType="Self.imagenes" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="archivosDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="imagene">
+        <EntityType Name="imagenes">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" />
           <Property Name="img" Type="Binary" MaxLength="Max" FixedLength="false" />
-          <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityContainer Name="archivosDBEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="imagenes" EntityType="Self.imagene" />
+          <EntitySet Name="imagenes1" EntityType="archivosDBModel.imagenes" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -38,8 +37,8 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="archivosDBModelStoreContainer" CdmEntityContainer="archivosDBEntities">
-          <EntitySetMapping Name="imagenes">
-            <EntityTypeMapping TypeName="archivosDBModel.imagene">
+          <EntitySetMapping Name="imagenes1">
+            <EntityTypeMapping TypeName="archivosDBModel.imagenes">
               <MappingFragment StoreEntitySet="imagenes">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="img" ColumnName="img" />

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="archivosDBModelStoreContainer" CdmEntityContainer="archivosDBEntities">
-    <EntitySetMapping Name="imagenes">
-      <EntityTypeMapping TypeName="archivosDBModel.imagene">
+    <EntitySetMapping Name="imagenes1">
+      <EntityTypeMapping TypeName="archivosDBModel.imagenes">
         <MappingFragment StoreEntitySet="imagenes">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="img" ColumnName="img" />

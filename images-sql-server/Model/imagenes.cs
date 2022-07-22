@@ -12,7 +12,7 @@ namespace images_sql_server.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class imagene
+    public partial class imagenes
     {
         public int id { get; set; }
         public byte[] img { get; set; }
